@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check, Zap, TrendingUp, BarChart3, Lock, DollarSign, BookOpen, Handshake, Users } from "lucide-react";
-import fintrackLogo from "@assets/FinTrack_Logo_1773295152942.png";
 import { useTheme } from "@/hooks/use-theme";
 import { AppHeader } from "@/components/AppHeader";
 import { AppFooter } from "@/components/AppFooter";
@@ -114,10 +113,11 @@ export default function Home() {
 
           <div className="mb-10 flex justify-center">
             <img 
-              src={fintrackLogo} 
-              alt="FinTrack Logo" 
+              src="/assets/FinTrack_Logo.png"
+              alt="FinTrack Logo"
               className="h-40 md:h-52 w-auto"
             />
+            
           </div>
 
           <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground mb-2">
