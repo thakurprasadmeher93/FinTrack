@@ -1,4 +1,3 @@
-import fintrackLogo from "@assets/FinTrack_Logo_1773295152942.png";
 import { useAuth } from "@/hooks/use-auth";
 
 export function AppFooter() {
@@ -12,9 +11,9 @@ export function AppFooter() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img 
-                  src={fintrackLogo} 
-                  alt="FinTrack Logo" 
-                  className="h-8 w-auto"
+                 src="/assets/FinTrack_Logo_1773295152942.png"
+                 alt="FinTrack Logo" 
+                 className="h-8 w-auto"
                 />
                 <span className="font-display font-bold text-foreground">FinTrack</span>
               </div>
