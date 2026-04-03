@@ -3,7 +3,6 @@ import { AppFooter } from "@/components/AppFooter";
 import { Card } from "@/components/ui/card";
 import { useTheme } from "@/hooks/use-theme";
 import { Code2, Zap, Award } from "lucide-react";
-import designerPhoto from "@assets/IMG_1994_1773297858230.PNG";
 
 export default function AboutDesigner() {
   const { colors } = useTheme();
@@ -56,8 +55,8 @@ export default function AboutDesigner() {
                 </div>
               </div>
               <div className="flex justify-center">
-                <img 
-                  src={designerPhoto} 
+             <img 
+                  src="/assets/IMG_1994_1773297858230.PNG" 
                   alt="Thakur Prasad Meher" 
                   className="w-full rounded-lg shadow-lg"
                 />
