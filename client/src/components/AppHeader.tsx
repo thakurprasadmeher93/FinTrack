@@ -3,7 +3,6 @@ import { Moon, Sun, Palette } from "lucide-react";
 import { useTheme, type ColorPalette } from "@/hooks/use-theme";
 import { useAuth } from "@/hooks/use-auth";
 import { useState } from "react";
-import fintrackLogo from "@assets/FinTrack_Logo_1773295152942.png";
 
 interface AppHeaderProps {
   showAuth?: boolean;
