@@ -10,11 +10,10 @@ export function AppFooter() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <img 
-                 src="/assets/FinTrack_Logo_1773295152942.png"
-                 alt="FinTrack Logo" 
-                 className="h-8 w-auto"
-                />
+               <img 
+                src="/assets/FinTrack_Logo.png"
+                alt="FinTrack Logo"
+               /> 
                 <span className="font-display font-bold text-foreground">FinTrack</span>
               </div>
               <p className="text-sm text-muted-foreground">
