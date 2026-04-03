@@ -104,3 +104,11 @@ app.use((req, res, next) => {
     },
   );
 })();
+import path from "path";
+import express from "express";
+
+app.use(express.static(path.join(process.cwd(), "dist/public")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(process.cwd(), "dist/public/index.html"));
+});
