@@ -52,9 +52,9 @@ export function AppFooter() {
           <div className="mb-8">
             <div className="flex items-center gap-3">
               <img 
-                src={fintrackLogo} 
-                alt="FinTrack Logo" 
-                className="h-8 w-auto"
+               src="/assets/FinTrack_Logo.png"
+               alt="FinTrack Logo" 
+               className="h-8 w-auto"
               />
               <span className="font-display font-bold text-foreground">FinTrack</span>
             </div>
