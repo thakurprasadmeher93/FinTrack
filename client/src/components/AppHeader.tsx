@@ -42,10 +42,10 @@ export function AppHeader({ showAuth = true, onSignIn, onSignUp }: AppHeaderProp
           onClick={handleLogoClick}
         >
           <img
-            src={fintrackLogo}
-            alt="FinTrack Logo"
-            className="h-10 w-auto"
-          />
+           src="/assets/FinTrack_Logo.png"
+           alt="FinTrack Logo"
+           className="h-10 w-auto"
+           />
           <span className="text-2xl font-display font-bold text-foreground">FinTrack</span>
         </div>
 
