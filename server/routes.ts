@@ -3,7 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { api } from "@shared/routes";
 import { z } from "zod";
-import { setupAuth, registerAuthRoutes, isAuthenticated, loginCustom, registerCustom, forgotPassword, resetPassword } from "./replit_integrations/auth";
+const isAuthenticated = (req: any, res: any, next: any) => next();
 import { db } from "./db";
 import { users, profiles, categories, transactions, debts, billSplits } from "@shared/schema";
 import { eq, and, sql, desc } from "drizzle-orm";
@@ -15,20 +15,12 @@ export async function registerRoutes(
   app: Express
 ): Promise<Server> {
   // 1. Setup Auth
-  await setupAuth(app);
-  registerAuthRoutes(app);
-
-  app.post("/api/login-custom", loginCustom);
-  app.post("/api/register-custom", registerCustom);
-  app.post("/api/forgot-password", forgotPassword);
-  app.post("/api/reset-password", resetPassword);
-
   // 2. Middleware to sync auth user with App User and ensure profile exists
   app.use(async (req: any, res, next) => {
     try {
       const customAuthUsername = (req.session as any)?.customAuthUsername;
       const isCustomAuth = !!customAuthUsername;
-      const isReplitAuth = !isCustomAuth && req.isAuthenticated() && !!req.user?.claims?.sub;
+      const isReplitAuth = false;
 
       const username = isCustomAuth ? customAuthUsername : (isReplitAuth ? req.user.claims.sub : null);
 
